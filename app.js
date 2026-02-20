@@ -5,8 +5,8 @@ const sum = (a,b) => {
     return a + b
 }
 
-const fromDollarToYen = (dollar) => {
-    let valueInYen = dollar * ( 1.07 / 156.5 );
+const fromDollarToYen = (dollars) => {
+    let valueInYen = dollars * ( 1.07 / 156.5 );
     return valueInYen;
 }
 
