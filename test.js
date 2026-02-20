@@ -1,4 +1,4 @@
-const { sum, fromEuroToDollar, fromDollarToYen } = require('./app.js');
+const { sum, fromEuroToDollar, fromDollarToYen, fromYenToPound } = require('./app.js');
 
 test('adds 14 + 9 to equal 23', () => {
     let total = sum(14, 9);
@@ -20,4 +20,12 @@ test("One dollar should be ( 1.07 / 156.5 ) yen", () => {
     const expected = ( 1.07 / 156.5 )
 
     expect(fromDollarToYen(1)).toBe(( 1.07 / 156.5 ))
+})
+
+test("Five yen should be 5 * (.87 / 156.5 ) pounds", () => {
+    const yen = fromYenToPound(5)
+
+    const expected = 5 * (.87 / 156.5 )
+
+    expect(fromYenToPound(5)).toBe(5 * (.87 / 156.5 ))
 })
