@@ -6,8 +6,8 @@ const sum = (a,b) => {
 }
 
 const fromDollarToYen = (dollar) => {
-    let valueinYen = dollar * 1.07 / 156.5;
-    return valueinYen;
+    let valueInYen = dollar * ( 1.07 / 156.5 );
+    return valueInYen;
 }
 
 // We declare the function with the exact name "fromEuroToDollar"
